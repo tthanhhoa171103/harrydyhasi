@@ -1,8 +1,119 @@
+<!DOCTYPE>
 <html>
-  <head>
-    <title>HarryDyhasi</title>
-  </head>
-  <body>
-    <h1>HarryDyhasi</h1>
-  </body>
+	<head>
+		<title>Login</title>
+		<link type="text/css" rel="stylesheet" href="../Css/Login game.css" />
+        <script type="text/javascript" src="../Javascript/Login game.js"></script>
+	  <stype>
+      @charset "utf-8";
+
+        /* CSS Document */
+
+        .loginbox {
+            width: 320px;
+            height: 460px;
+            border: 2px;
+            border-color: #078dca;
+            top: 100px;
+            left: calc(50% - 160px);
+            top: calc(50%-230px);
+            padding: 15px;
+            position: absolute;
+            color: #309de0;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 65.17px;
+            top: calc(50% - 40px);
+            left: calc(50% - 32.585px);
+            position: relative;
+            align-items: center;
+            background-image: url('../Pictures/gamevector.jpg');
+        }
+
+        h1 {
+            margin: 0;
+            margin-top: 15px;
+            padding: 0 0 20px;
+            text-align: center;
+            font-family: "Tw Cen MT";
+        }
+
+        .loginbox p {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .loginbox input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #1ea6f5;
+            background: transparent;
+            outline: none;
+        }
+
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #3aabf1;
+            border-radius: 20px;
+            font-family: "Tw Cen MT";
+            font-weight: 40px;
+            color: white;
+        }
+
+        .loginbox input[type="submit"]:hover {
+            cursor: pointer;
+            background: #529fe7;
+        }
+
+        .loginbox a {
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 20px;
+            color: #3092ec;
+        }
+
+        .loginbox a:hover {
+            color: #9cb3c7;
+        }
+
+        body {
+            background-image: url('../Pictures/12_Counter-Strike-1.6.jpg');
+            font-family: "Tw Cen MT";
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+    </stype>
+	</head>
+
+	<body>
+	
+     <div class="loginbox" />
+        <img src="../Pictures/game vector.jpg" class="avatar" />
+        <h1>Sign In Now</h1>
+        <form>
+            <p class="title" > Username </p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p class="title">Password </p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login" >
+            <br>
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+        </form>
+     
+    </div>
+	
+</body>
+
 </html>
+
