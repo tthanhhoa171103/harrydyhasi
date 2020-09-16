@@ -1,119 +1,66 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Login</title>
-	  <style>
-     	 @charset "utf-8";
-
-		/* CSS Document */
-
-		.loginbox {
-		    width: 350px;
-		    height: 480px;
-		    border-color: #078dca;
-		    top: 100px;
-		    left: 65%;
-		    top: calc(50%-240px);
-		    padding: 15px;
-		    position: absolute;
-		    color: #7d878a;
-		}
-
-		.avatar {
-		    width: 80px;
-		    height: 65.17px;
-		    top: calc(50% - 40px);
-		    left: calc(50% - 32.585px);
-		    position: relative;
-		    align-items: center;
-		}
-
-		h1 {
-		    margin: 0;
-		    margin-top: 15px;
-		    padding: 0 0 20px;
-		    text-align: center;
-		    font-family: "Tw Cen MT";
-		}
-
-		.loginbox p {
-		    font-size: 20px;
-		    font-weight: bolder;
-		}
-
-		.loginbox input {
-		    width: 100%;
-		    margin-bottom: 20px;
-		}
-
-		.loginbox input[type="text"],
-		input[type="password"] {
-		    border: none;
-		    color: #9cb3c7;
-		    border-bottom: 1px solid #7d878a;
-		    background: transparent;
-		    outline: none;
-		}
-
-		.loginbox input[type="submit"] {
-		    border: none;
-		    outline: none;
-		    height: 40px;
-		    background: #7d878a;
-		    border-radius: 20px;
-		    font-family: "Tw Cen MT";
-		    font-weight: 40px;
-		    color: white;
-		}
-
-		.loginbox input[type="submit"]:hover {
-		    cursor: pointer;
-		    background: #575c5f;
-		}
-
-		.loginbox a {
-		    text-decoration: none;
-		    text-align: right;
-		    font-size: 15px;
-		    line-height: 20px;
-		    color: #7d878a;
-		    position: relative;
-		}
-
-		.loginbox a:hover {
-		    color: #9cb3c7;
-		}
-
-		body {
-		    background-image: url('https://user-images.githubusercontent.com/68063440/89095905-31dce180-d3fc-11ea-8dab-e20f527f1ee9.jpg');
-		    font-family: "Tw Cen MT";
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    height: 100%;
-		 }
-    </style>
-		<meta name="viewpoint" content="width=device-width,initial-scale=1" />
-	</head>
-
-	<body>
-	
-     <div class="loginbox" />
-        <img src="https://user-images.githubusercontent.com/68063440/89095682-69e32500-d3fa-11ea-8aca-6daa56ed2d62.png" class="avatar" />
-        <h1>Sign In Now</h1>
-        <form>
-            <p class="title" > Username </p>
-            <input type="text" name="" placeholder="Enter Username">
-            <p class="title">Password </p>
-            <input type="password" name="" placeholder="Enter Password">
-            <input type="submit" name="" value="Login" >
-            <br>
-            <a href="#">Lost your password?</a><br>
-            <a href="#">Don't have an account?</a>
-        </form>
-     
-    </div>
-	
+  <head>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <style>
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 5%;
+  text-align: center;
+}
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+.slide:nth-child(1) {
+  background: #D93B65;
+}
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+</style>
+</head>
+<body>
+<div id="slideshow">
+  <div class="slide-wrapper">
+    <div class="slide"><h1 class="slide-number">1</h1></div>
+    <div class="slide"><h1 class="slide-number">2</h1></div>
+    <div class="slide"><h1 class="slide-number">3</h1></div>
+    <div class="slide"><h1 class="slide-number">4</h1></div>
+    <div class="slide"><h1 class="slide-number">5</h1></div>
+  </div>
+</div>
+<h1>Just a simple slideshow. CSS only, no JS</h1>
 </body>
-
-</html>
-
+  </html>
